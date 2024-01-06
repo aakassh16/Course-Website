@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .course {
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #f9f9f9; /* Light background color for courses */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+        }
+
+        .frontend {
+            border-color: #4CAF50;
+            color: #4CAF50;
+        }
+
+        .backend {
+            border-color: #2196F3;
+            color: #2196F3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #1b779f;
+        }
+
+        h2 {
+            color: #28d910;
+        }
+
+        p {
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .course {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #4CAF50;">Web Development Courses</h1>
+        <h2 style="color: #4CAF50;">by</h2>
+        <h2 style="color: #4CAF50;">Akash Kundu</h2>
+    </header>
+
+    <main>
+        <div class="course-container">
+            <div class="course frontend">
+                <h2>Frontend Development</h2>
+                <p>Learn the skills to create beautiful and interactive user interfaces.</p>
+                <a href="https://drive.google.com/drive/u/3/folders/1ZB7huMFnBacYbHqL__mY3_Z2-Yvum0Xc">Start Learning</a>
+            </div>
+
+            <div class="course backend">
+                <h2>Backend Development</h2>
+                <p>Build the server-side of web applications and manage databases.</p>
+                <a href="https://drive.google.com/drive/u/1/folders/15ujAFpYlQaoZt8wvZYYJd1HJNxLTs8yX">Start Learning</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Thank You!</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p style="color: #999;">&copy; <span class="current-year"></span> Copyright AKASH_K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
